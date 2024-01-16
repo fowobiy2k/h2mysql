@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS tbl_phones(
+    id INT NOT NULL AUTO_INCREMENT,
+    brand VARCHAR(255) NOT NULL,
+    model VARCHAR(255) NOT NULL,
+    weight DOUBLE NOT NULL,
+    PRIMARY KEY (id)
+);
+
+--INSERT INTO tbl_phones VALUES (1, "SAMSUNG", "A01");
+--INSERT INTO tbl_phones VALUES (2, "SAMSUNG", "A02");
+--INSERT INTO tbl_phones VALUES (3, "SAMSUNG", "A03");
