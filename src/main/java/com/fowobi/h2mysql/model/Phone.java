@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity
+@Entity
 public class Phone {
 
-//    @Id
-//    @GeneratedValue( strategy = GenerationType.AUTO )
+    @Id
+    @GeneratedValue( strategy = GenerationType.AUTO )
     private int id;
     private String brand;
     private String model;

@@ -17,7 +17,7 @@ public class PhoneController {
     }
 
     @PostMapping("/add")
-    public int add(@RequestBody Phone phone) {
+    public Phone add(@RequestBody Phone phone) {
         return phoneService.addPhone(phone);
     }
 

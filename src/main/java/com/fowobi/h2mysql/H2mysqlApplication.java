@@ -16,13 +16,13 @@ public class H2mysqlApplication {
 		SpringApplication.run(H2mysqlApplication.class, args);
 	}
 
-	@Bean
-	JdbcTemplate jdbcTemplate(@Qualifier("secondary") DataSource dataSource) {
-		return new JdbcTemplate(dataSource);
-	}
+//	@Bean
+//	JdbcTemplate jdbcTemplate(@Qualifier("secondary") DataSource dataSource) {
+//		return new JdbcTemplate(dataSource);
+//	}
 
 	@Bean
-	CommandLineRunner runner(@Qualifier("primary") DataSource dataSource) {
+	CommandLineRunner runner(@Qualifier("datasource") DataSource dataSource) {
 		return args -> {
 			System.out.println("Inside runner");
 			System.out.println(dataSource.getConnection().getMetaData().getURL());
@@ -30,7 +30,7 @@ public class H2mysqlApplication {
 	}
 
 	@Bean
-	CommandLineRunner runner2(@Qualifier("secondary") DataSource dataSource) {
+	CommandLineRunner runner2(@Qualifier("furnitureDatasource") DataSource dataSource) {
 		return args -> {
 			System.out.println("Inside runner 2");
 			System.out.println(dataSource.getConnection().getMetaData().getURL());
