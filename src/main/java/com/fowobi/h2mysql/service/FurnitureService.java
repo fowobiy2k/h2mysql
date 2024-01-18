@@ -1,6 +1,6 @@
 package com.fowobi.h2mysql.service;
 
-import com.fowobi.h2mysql.model.Furniture;
+import com.fowobi.h2mysql.model.furniture.Furniture;
 import com.fowobi.h2mysql.repository.furniture.FurnitureRepository;
 import org.springframework.stereotype.Service;
 

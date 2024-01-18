@@ -1,6 +1,6 @@
 package com.fowobi.h2mysql.service;
 
-import com.fowobi.h2mysql.model.Phone;
+import com.fowobi.h2mysql.model.phone.Phone;
 //import com.fowobi.h2mysql.repository.phone.PhoneRepository;
 import com.fowobi.h2mysql.repository.phone.PhoneRepository;
 import org.springframework.stereotype.Service;

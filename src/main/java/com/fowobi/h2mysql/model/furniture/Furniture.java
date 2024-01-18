@@ -1,4 +1,4 @@
-package com.fowobi.h2mysql.model;
+package com.fowobi.h2mysql.model.furniture;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

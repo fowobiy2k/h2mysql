@@ -3,6 +3,7 @@ package com.fowobi.h2mysql.model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.fowobi.h2mysql.model.phone.Phone;
 import org.springframework.jdbc.core.RowMapper;
 
 public class PhoneMapper implements RowMapper<Phone> {

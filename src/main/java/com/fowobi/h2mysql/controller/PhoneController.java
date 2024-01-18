@@ -1,6 +1,6 @@
 package com.fowobi.h2mysql.controller;
 
-import com.fowobi.h2mysql.model.Phone;
+import com.fowobi.h2mysql.model.phone.Phone;
 import com.fowobi.h2mysql.service.PhoneService;
 import org.springframework.web.bind.annotation.*;
 

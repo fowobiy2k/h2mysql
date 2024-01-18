@@ -1,4 +1,4 @@
-package com.fowobi.h2mysql.model;
+package com.fowobi.h2mysql.model.phone;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "tbl_phones")
 public class Phone {
 
     @Id

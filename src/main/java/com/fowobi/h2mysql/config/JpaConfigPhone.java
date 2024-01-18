@@ -1,6 +1,6 @@
 package com.fowobi.h2mysql.config;
 
-import com.fowobi.h2mysql.model.Phone;
+import com.fowobi.h2mysql.model.phone.Phone;
 import jakarta.persistence.EntityManagerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -47,6 +47,7 @@ public class JpaConfigPhone {
                 .dataSource(dataSource)
                 .properties(properties)
                 .packages(Phone.class)
+                .persistenceUnit("tbl_phones")
                 .build();
     }
 

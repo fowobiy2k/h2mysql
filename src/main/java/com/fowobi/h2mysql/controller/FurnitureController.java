@@ -1,6 +1,6 @@
 package com.fowobi.h2mysql.controller;
 
-import com.fowobi.h2mysql.model.Furniture;
+import com.fowobi.h2mysql.model.furniture.Furniture;
 import com.fowobi.h2mysql.service.FurnitureService;
 import org.springframework.web.bind.annotation.*;
 
